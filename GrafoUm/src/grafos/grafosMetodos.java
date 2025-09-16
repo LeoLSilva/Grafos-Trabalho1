@@ -122,6 +122,8 @@ public class grafosMetodos {
 		} else {
 			for (int i = 0; i < n; i++) {
 				for (int j = i; j < n; j++) {
+					if(i == j & matrizAdj[i][j] >0) cont++;
+					else
 					cont += matrizAdj[i][j];
 				}
 			}
