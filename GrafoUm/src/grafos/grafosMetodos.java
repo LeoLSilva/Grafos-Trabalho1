@@ -58,10 +58,10 @@ public class grafosMetodos {
 				}
 			}
 		}
-		// Se for true é regular
 		return true;
 	}
 
+	
 	private boolean VerificarCompleto() {
 		if (verificarNulo())
 			return false;
@@ -86,6 +86,7 @@ public class grafosMetodos {
 			for (int i = 0; i < n; i++) {
 				for (int j = 0; j < n; j++) {
 					cont[i] += matrizAdj[i][j];
+					if(cont[i] != cont[0]) return false;
 				}
 			}
 		} else {
